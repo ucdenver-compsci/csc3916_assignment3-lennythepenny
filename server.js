@@ -81,12 +81,11 @@ router.post('/signin', function (req, res) {
 });
 //get movies
 router.get('/movies', authJwtController.isAuthenticated, (req, res) => {
-    Movie.find()
+    Movie.find({}, 'title releaseDate genre actors') // Projecting only the required fields
         .then(movies => {
             res.status(200).json(movies);
         });
 });
-
 //post movies
 router.post('/movies', authJwtController.isAuthenticated, (req, res) => {
     const { title, releaseDate, genre, actors } = req.body;
