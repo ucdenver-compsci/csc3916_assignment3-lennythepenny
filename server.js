@@ -81,7 +81,7 @@ router.post('/signin', function (req, res) {
 });
 //get movies
 router.get('/movies', authJwtController.isAuthenticated, (req, res) => {
-    Movie.find({}, 'title') // Projecting only the required fields
+    Movie.find({}, title) // Projecting only the required fields
         .then(movies => {
             res.status(200).json(movies);
         });
