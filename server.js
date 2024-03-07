@@ -28,8 +28,8 @@ var router = express.Router();
 //process.env.MONGODB_URI
 //ADDED THESE LINES
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => console.log('MongoDB connected'))
-  .catch(err => console.log(err));
+//   .then(() => console.log('MongoDB connected'))
+//   .catch(err => console.log(err));
 
 router.post('/signup', function(req, res) {
     if (!req.body.username || !req.body.password) {
