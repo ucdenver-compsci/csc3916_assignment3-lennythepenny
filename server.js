@@ -88,7 +88,7 @@ router.get('/movies', authJwtController.isAuthenticated, (req, res) => {
 });
 //post movies
 router.post('/movies', authJwtController.isAuthenticated, (req, res) => {
-    const { title, releaseDate, genre, actors } = req.body;
+    const {title, releaseDate, genre, actors } = req.body;
     const newMovie = new Movie({ title, releaseDate, genre, actors });
 
     newMovie.save()
