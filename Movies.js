@@ -16,9 +16,9 @@ const MovieSchema = new mongoose.Schema({
       actorName: String,
       characterName: String,
     }],
-  });
+  }, { collection : 'movies' });
   
 
 // return the model
 const MovieModel = mongoose.model('Movie', MovieSchema);
-module.exports = mongoose.model('Movie', MovieSchema);
+module.exports = MovieModel;

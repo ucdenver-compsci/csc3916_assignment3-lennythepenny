@@ -11,25 +11,25 @@ var jwt = require('jsonwebtoken');
 var cors = require('cors');
 var User = require('./Users');
 var Movie = require('./Movies');
-const mongoose = require('mongoose'); // Add this line
-require('dotenv').config(); // Add this line
-
-//ADDED THESE LINES
-const port = process.env.PORT || 8080;
-//const uri = process.env.DB; // Get MongoDB URI from environment variables
-const uri = "mongodb+srv://nodeAdmin:apigee@cluster0.oxcxwfg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const mongoose = require('mongoose'); 
+require('dotenv').config();
 var app = express();
-app.use(cors());
+
+const corsOptions = {
+    origin: 'https://csc3916-react-lennythepenny.onrender.com',
+};
+app.use(cors(corsOptions));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(passport.initialize());
 var router = express.Router();
 
-//process.env.MONGODB_URI
-//ADDED THESE LINES
-// mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
-//   .then(() => console.log('MongoDB connected'))
-//   .catch(err => console.log(err));
+const uri = process.env.DB;
+const port = process.env.PORT || 8080;
+
+mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => console.log('MongoDB connected'))
+  .catch(err => console.log(err));
 
 router.post('/signup', function(req, res) {
     if (!req.body.username || !req.body.password) {
@@ -79,16 +79,23 @@ router.post('/signin', function (req, res) {
         })
     })
 });
-//get movies
+//get
 router.get('/movies', authJwtController.isAuthenticated, (req, res) => {
-    Movie.find({}, title) // Projecting only the required fields
+    Movie.find({ title: { $exists: true } })
         .then(movies => {
             res.status(200).json(movies);
+        })
+        .catch(error => {
+            console.error('Error finding movies:', error);
+            res.status(500).json({ error: 'An error occurred while fetching movies' });
         });
 });
 //post movies
 router.post('/movies', authJwtController.isAuthenticated, (req, res) => {
     const {title, releaseDate, genre, actors } = req.body;
+    if (!title) {
+        return res.status(400).json({ error: 'Title is required' });
+    }
     const newMovie = new Movie({ title, releaseDate, genre, actors });
 
     newMovie.save()
@@ -98,16 +105,30 @@ router.post('/movies', authJwtController.isAuthenticated, (req, res) => {
 });
 
 //put movies
-router.put('/movies/:id', authJwtController.isAuthenticated, (req, res) => {
+router.put('/movies', authJwtController.isAuthenticated, (req, res) => {
     const { id } = req.params;
     const { title, releaseDate, genre, actors } = req.body;
+    if (!title) {
+        return res.status(400).json({ error: 'Title is required' });
+    }
 
     Movie.findByIdAndUpdate(id, { title, releaseDate, genre, actors }, { new: true })
         .then(updatedMovie => {
             res.status(200).json(updatedMovie);
         });
 });
+// DELETE Movies
+router.delete('/movies', authJwtController.isAuthenticated, (req, res) => {
+    const { id } = req.params;
+
+    Movie.findByIdAndDelete(id)
+        .then(deletedMovie => res.status(200).json(deletedMovie))
+        .catch(error => res.status(500).json({ error: 'An error occurred while deleting the movie' }));
+});
 
 app.use('/', router);
 app.listen(process.env.PORT || 8080);
+// app.listen(port, () => {
+//     console.log(`Server is running on port ${port}`);
+// });
 module.exports = app; //for testing only

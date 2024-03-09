@@ -1,0 +1,242 @@
+[{
+    "_id": {
+      "$oid": "65e0e913347fff27dc8765d7"
+    },
+    "title": "Jujutsu Kaisen 0",
+    "releaseDate": "2021-12-24",
+    "genre": "Action",
+    "actors": [
+      {
+        "actorName": "Megumi Ogata",
+        "characterName": "Yuta Okkotsu"
+      },
+      {
+        "actorName": "Kana Hanazawa",
+        "characterName": "Rika Orimoto"
+      },
+      {
+        "actorName": "Yuichi Nakamura",
+        "characterName": "Satoru Gojo"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "65e0e913347fff27dc8765d9"
+    },
+    "title": "Kill Bill: Vol. 1",
+    "releaseDate": "2003-10-10",
+    "genre": "Action",
+    "actors": [
+      {
+        "actorName": "Uma Thurman",
+        "characterName": "The Bride"
+      },
+      {
+        "actorName": "Lucy Liu",
+        "characterName": "O-Ren Ishii"
+      },
+      {
+        "actorName": "David Carradine",
+        "characterName": "Bill"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "65e0e913347fff27dc8765dc"
+    },
+    "title": "John Wick",
+    "releaseDate": "2014-10-24",
+    "genre": "Action, Thriller",
+    "actors": [
+      {
+        "actorName": "Keanu Reeves",
+        "characterName": "John Wick"
+      },
+      {
+        "actorName": "Michael Nyqvist",
+        "characterName": "Viggo Tarasov"
+      },
+      {
+        "actorName": "Alfie Allen",
+        "characterName": "Iosef Tarasov"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "65e0e913347fff27dc8765d6"
+    },
+    "title": "The Menu",
+    "releaseDate": "2022-02-18",
+    "genre": "Thriller",
+    "actors": [
+      {
+        "actorName": "Anys Taylor-Joy",
+        "characterName": "Margot"
+      },
+      {
+        "actorName": "Nicholas Hoult",
+        "characterName": "Tyler"
+      },
+      {
+        "actorName": "Ralph Fiennes",
+        "characterName": "Chef Slowik"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "65e0e913347fff27dc8765d8"
+    },
+    "title": "Shutter Island",
+    "releaseDate": "2010-02-19",
+    "genre": "Mystery",
+    "actors": [
+      {
+        "actorName": "Leonardo DiCaprio",
+        "characterName": "Teddy Daniels"
+      },
+      {
+        "actorName": "Mark Ruffalo",
+        "characterName": "Chuck Aule"
+      },
+      {
+        "actorName": "Ben Kingsley",
+        "characterName": "Dr. John Cawley"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "65e0e913347fff27dc8765da"
+    },
+    "title": "Pirates of the Caribbean: On Stranger Tides",
+    "releaseDate": "2011-05-20",
+    "genre": "Adventure",
+    "actors": [
+      {
+        "actorName": "Johnny Depp",
+        "characterName": "Jack Sparrow"
+      },
+      {
+        "actorName": "Penélope Cruz",
+        "characterName": "Angelica"
+      },
+      {
+        "actorName": "Ian McShane",
+        "characterName": "Blackbeard"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "65e0e913347fff27dc8765de"
+    },
+    "title": "Star Wars: Episode III - Revenge of the Sith",
+    "releaseDate": "2005-05-19",
+    "genre": "Science Fiction, Fantasy",
+    "actors": [
+      {
+        "actorName": "Ewan McGregor",
+        "characterName": "Obi-Wan Kenobi"
+      },
+      {
+        "actorName": "Hayden Christensen",
+        "characterName": "Anakin Skywalker"
+      },
+      {
+        "actorName": "Natalie Portman",
+        "characterName": "Padmé Amidala"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "65e0e913347fff27dc8765db"
+    },
+    "title": "Bill and Ted's Excellent Adventure",
+    "releaseDate": "1989-02-17",
+    "genre": "Comedy, Science Fiction",
+    "actors": [
+      {
+        "actorName": "Keanu Reeves",
+        "characterName": "Ted"
+      },
+      {
+        "actorName": "Alex Winter",
+        "characterName": "Bill S. Preston, Esq."
+      },
+      {
+        "actorName": "George Carlin",
+        "characterName": "Rufus"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "65e0e913347fff27dc8765dd"
+    },
+    "title": "Wayne's World",
+    "releaseDate": "1992-02-14",
+    "genre": "Comedy, Music",
+    "actors": [
+      {
+        "actorName": "Mike Myers",
+        "characterName": "Wayne Campbell"
+      },
+      {
+        "actorName": "Dana Carvey",
+        "characterName": "Garth Algar"
+      },
+      {
+        "actorName": "Rob Lowe",
+        "characterName": "Benjamin Kane"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "65e0e913347fff27dc8765d5"
+    },
+    "title": "Midsommar",
+    "releaseDate": "2019-07-03",
+    "genre": "Horror",
+    "actors": [
+      {
+        "actorName": "Florence Pugh",
+        "characterName": "Dani Ardor"
+      },
+      {
+        "actorName": "Jack Reynor",
+        "characterName": "Christian Hughes"
+      },
+      {
+        "actorName": "William Jackson Harper",
+        "characterName": "Josh"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "65eb98af0d5d18b89a8a42fc"
+    },
+    "title": "Alice in Wonderland",
+    "releaseDate": "2010-01-01",
+    "genre": "Fantasy",
+    "actors": [
+      {
+        "actorName": "Mia Wasikowska",
+        "characterName": "Alice Kingsleigh"
+      },
+      {
+        "actorName": "Johnny Depp",
+        "characterName": "Mad Hatter"
+      },
+      {
+        "actorName": "Helena Bonham Carter",
+        "characterName": "Red Queen"
+      }
+    ]
+  }]
