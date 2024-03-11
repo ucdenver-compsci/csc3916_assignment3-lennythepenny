@@ -20,7 +20,7 @@ require('dotenv').config();
 var app = express();
 var router = express.Router();
 
-app.use(cors(corsOptions));
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(passport.initialize());
