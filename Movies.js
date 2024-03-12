@@ -1,11 +1,9 @@
 var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
-
 mongoose.connect(process.env.DB);
 
 const MovieSchema = new mongoose.Schema({
     title: { type: String, required: true, index: true },
-    releaseDate: Date,
+    releaseDate: Date, 
     genre: {
       type: String,
       enum: [
@@ -13,7 +11,7 @@ const MovieSchema = new mongoose.Schema({
       ],
     },
     actors: [{
-      actorName: String,
+      actorName: String, 
       characterName: String,
     }],
   }, { collection : 'movies' });

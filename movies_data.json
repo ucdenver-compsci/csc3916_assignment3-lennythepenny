@@ -1,9 +1,6 @@
 [{
-    "_id": {
-      "$oid": "65e0e913347fff27dc8765d7"
-    },
     "title": "Jujutsu Kaisen 0",
-    "releaseDate": 2021,
+    "releaseDate": "2021-01-01T00:00:00.000Z",
     "genre": "Action",
     "actors": [
       {
@@ -21,11 +18,8 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "65e0e913347fff27dc8765d9"
-    },
     "title": "Kill Bill: Vol. 1",
-    "releaseDate": 2003,
+    "releaseDate": "2003-01-01T00:00:00.000Z",
     "genre": "Action",
     "actors": [
       {
@@ -43,11 +37,8 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "65e0e913347fff27dc8765dc"
-    },
     "title": "John Wick",
-    "releaseDate": 2014,
+    "releaseDate": "2014-01-01T00:00:00.000Z",
     "genre": "Action, Thriller",
     "actors": [
       {
@@ -65,11 +56,8 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "65e0e913347fff27dc8765d6"
-    },
     "title": "The Menu",
-    "releaseDate": 2022,
+    "releaseDate": "2022-01-01T00:00:00.000Z",
     "genre": "Thriller",
     "actors": [
       {
@@ -87,11 +75,8 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "65e0e913347fff27dc8765d8"
-    },
     "title": "Shutter Island",
-    "releaseDate": 2010,
+    "releaseDate": "2022-01-01T00:00:00.000Z",
     "genre": "Mystery",
     "actors": [
       {
@@ -109,11 +94,8 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "65e0e913347fff27dc8765da"
-    },
     "title": "Pirates of the Caribbean: On Stranger Tides",
-    "releaseDate": 2011,
+    "releaseDate": "2011-01-01T00:00:00.000Z",
     "genre": "Adventure",
     "actors": [
       {
@@ -131,11 +113,8 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "65e0e913347fff27dc8765de"
-    },
     "title": "Star Wars: Episode III - Revenge of the Sith",
-    "releaseDate": 2005,
+    "releaseDate": "2005-01-01T00:00:00.000Z",
     "genre": "Science Fiction, Fantasy",
     "actors": [
       {
@@ -153,11 +132,8 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "65e0e913347fff27dc8765db"
-    },
     "title": "Bill and Ted's Excellent Adventure",
-    "releaseDate": 1989,
+    "releaseDate": "1989-01-01T00:00:00.000Z",
     "genre": "Comedy, Science Fiction",
     "actors": [
       {
@@ -175,11 +151,8 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "65e0e913347fff27dc8765dd"
-    },
     "title": "Wayne's World",
-    "releaseDate": 1992,
+    "releaseDate": "1992-01-01T00:00:00.000Z",
     "genre": "Comedy, Music",
     "actors": [
       {
@@ -197,11 +170,8 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "65e0e913347fff27dc8765d5"
-    },
     "title": "Midsommar",
-    "releaseDate": 2019,
+    "releaseDate": "2019-01-01T00:00:00.000Z",
     "genre": "Horror",
     "actors": [
       {
@@ -219,11 +189,8 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "65eb98af0d5d18b89a8a42fc"
-    },
     "title": "Alice in Wonderland",
-    "releaseDate": 2010,
+    "releaseDate": "2010-01-01T00:00:00.000Z",
     "genre": "Fantasy",
     "actors": [
       {
