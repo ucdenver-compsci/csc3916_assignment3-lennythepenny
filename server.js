@@ -24,6 +24,9 @@ var router = express.Router();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(passport.initialize());
+app.use(cors({
+    origin: 'https://csc3916-react-lennythepenny.onrender.com'
+}));
 
 //MongoDB connection URI and port
 const uri = process.env.DB;
