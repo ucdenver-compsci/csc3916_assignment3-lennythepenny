@@ -32,8 +32,13 @@ app.use(cors({
 const uri = process.env.DB;
 const port = process.env.PORT || 8080;
 
+// //connect to MongoDB database
+// mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
+//   .then(() => console.log('MongoDB connected'))
+//   .catch(err => console.log(err));
+
 //connect to MongoDB database
-mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(uri)
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.log(err));
 
